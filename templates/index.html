@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-brand">
+         <img src="static/logo.svg" alt="micro-blog" class="navbar-logo"/>MicroBlog
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Recent</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Calendar</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <section>
+            <h1>Add new entry</h1>
+            <form class="form" action="/" method="post">
+                <p class="form-input">
+                    <label for="entry" class="form-label">Entry Content:</label>
+                <textarea class="form-text" name="content" id="entry" ></textarea>
+            </p>
+            <button type="submit" class="form-btn">Add entry</button>
+            </form>
+        </section>
+        <section>
+            <h1>Recent posts</h1>
+            {% for entry in entries %}
+            <article class="entry">
+                <div>
+                    <h2 class="entry-title">{{entry[0]| truncate(30,true)}}</h2>
+                    <time class="entry-date" datetime="{{entry[1]}}">{{entry[2]}}</time>
+                </div>
+                <p class="entry-content">
+                    {{ entry[0] }}
+                </p>
+            </article>
+            {% endfor %}
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <section class="footer-left">
+                <a class="footer-item" href="#">Made by Venkat</a>
+                <a class="footer-item" href="#">Check out my projects</a>
+            </section>
+            <section class="footer-right">
+                <div class="footer-column">
+                <a class="footer-item" href="#">Recent</a>
+                <a class="footer-item" href="#">Calendar</a>
+            </div>
+            <div class="footer-column">
+                <a class="footer-item" href="#">About</a>
+                <a class="footer-item" href="#">How this was made</a>
+            </div>
+            </section>
+        </div>
+
+    </footer>
+</body>
+</html>

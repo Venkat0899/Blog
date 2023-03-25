@@ -1,0 +1,154 @@
+html
+{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+.navbar
+{
+    max-width: 640px;
+    margin:50px auto;
+    padding:0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.navbar-brand
+{
+    display: flex;
+    align-items: center;
+    
+}
+.navbar-logo
+{
+    margin-right: 30px;
+}
+.navbar-nav
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    color: #5c6b70;
+}
+.nav-item
+{
+    margin-left: 50px;
+}
+.nav-link
+{
+    text-decoration: none;
+    color: inherit;
+}
+main
+{
+    max-width: 540px;
+    margin:  0 auto;
+    padding: 0 20px;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.form-input
+{
+    width: 100%;
+    
+}
+.form-label
+{
+  display: block;
+  margin-bottom: 10px;  
+}
+.form-text
+{
+  
+    width: inherit;
+    font-size: 18px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f3f6f6;
+    margin-bottom: 10px;
+}
+.form-btn
+{
+    background-color: #3cd0ff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding:5px 30px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.form-btn:hover{
+    background-color: #18c1e1;
+
+}
+.entry-title
+{
+    display: inline;
+    font-size: 18px;
+}
+.entry-date
+{
+    color: #5c6b70;
+}
+.entry-content
+{
+    font-size:16px;
+    line-height: 150%;
+}
+.footer
+{
+    background-color: #323f43;
+    padding:40px 0;
+    margin-top:50px;
+    border-top: 4px solid black;
+    color: white;
+    font-size: 12px;
+}
+.footer-content{
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.footer-left
+{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+.footer-right
+{
+    flex-grow:1;
+    display: flex;
+    flex-direction: row;
+
+}
+.footer-column
+{
+    display:flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.footer-item
+{
+    margin-bottom:5px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer-item:hover
+{
+    text-decoration: underline;
+}
